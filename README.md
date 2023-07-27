@@ -13,3 +13,4 @@ A repository for the POC for parsing translation dicitonaries using OCR. This is
 - `test.py` - testing some features
 
 # Instructions to run
+`python poc_ocr_windows.py` to run the POC. Once the window opens, load a PDF and select a page to be displayed. Then view the page with the bounding boxes overlaid.
