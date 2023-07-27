@@ -9,8 +9,8 @@ A repository for the POC for parsing translation dicitonaries using OCR. This is
 # Files and Folders
 - `Hanuman_Chalisa_In_Odia.pdf` - a sample pdf to test the OCR on.
 - `poc_ocr_window.py` - the final POC for loading PDFs and showing the bounding boxes.
-- `poc_ocr.py` - a fallback checkpoint for poc_ocr_window.py
+- `poc_ocr.py` - a fallback checkpoint for poc_ocr_window.py - to where only the pdf is loaded and there is no display.
 - `test.py` - testing some features
 
 # Instructions to run
-`python poc_ocr_windows.py` to run the POC. Once the window opens, load a PDF and select a page to be displayed. Then view the page with the bounding boxes overlaid.
+`python poc_ocr_windows.py` to run the POC. Once the window opens, load a PDF and then select a page to be displayed. Then view the page with the bounding boxes overlaid.

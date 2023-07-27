@@ -39,6 +39,8 @@ def browse_pdf():
     global menu
     file_path = filedialog.askopenfilename(filetypes=[("PDF Files", "*.pdf")])
     if file_path:
+        # display waiting message
+        # update_label('PDF is loading, please wait before further actions...') # this does not work for some reason. also it is not even needed.
         # Create a PDF from a URL or local file path
         pdf = PdfDocument.FromFile(file_path)
         # Extract all pages to a folder as image files
@@ -81,7 +83,7 @@ def draw_boxes(img, boxes):
     for i in range(len(boxes['text'])):
         if int(boxes['conf'][i]) > 50:
             x, y, w, h = boxes['left'][i], boxes['top'][i], boxes['width'][i], boxes['height'][i]
-            draw.rectangle(((x, y), (x + w, y + h)), outline='red')
+            draw.rectangle(((x, y), (x + w, y + h)), outline='red', width=10)
 
     return img
 
